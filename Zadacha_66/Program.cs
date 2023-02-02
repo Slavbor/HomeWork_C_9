@@ -15,7 +15,7 @@ WriteLine();
 Write("Enter M: ");
 int M = int.Parse(ReadLine()!);
 
-Write("Enter N (more then M): ");
+Write("Enter N: ");
 int N = int.Parse(ReadLine()!);
 
 
@@ -31,6 +31,7 @@ int SummNumbers(int n, int m)
 {
     if (n == m)
         return m;
+    else if (n > m) return n + SummNumbers(n - 1, m);
     else
         return n + SummNumbers(n + 1, m);
 }

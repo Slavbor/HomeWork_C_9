@@ -19,15 +19,15 @@ ulong N = UInt64.Parse(ReadLine()!);
 
 WriteLine(AkkermanFunc(M, N));
 
-		ulong AkkermanFunc(ulong m, ulong n)
-		{
-			if(m == 0)
-			{
-				return n + 1;
-			}
-			if(m > 0 && n == 0)
-			{
-				return AkkermanFunc(m - 1, 1);
-			}
-			return AkkermanFunc(m - 1, AkkermanFunc(m, n - 1));
-		}
+ulong AkkermanFunc(ulong m, ulong n)
+{
+    if (m == 0)
+    {
+        return n + 1;
+    }
+    if (m > 0 && n == 0)
+    {
+        return AkkermanFunc(m - 1, 1);
+    }
+    return AkkermanFunc(m - 1, AkkermanFunc(m, n - 1));
+}
