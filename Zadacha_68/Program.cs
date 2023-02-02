@@ -2,13 +2,14 @@
 //  функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
+
 using System;
 using static System.Console;
 
 Clear();
 
 WriteLine();
-WriteLine("    # Print summ of numbers fm M to N. Recursion method. #");
+WriteLine("    # Ackermann function. Recursion method. #");
 WriteLine();
 
 Write("Enter M: ");

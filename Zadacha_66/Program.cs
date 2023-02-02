@@ -26,12 +26,12 @@ WriteLine(SummNumbers(M, N));
 
 
 
-
 int SummNumbers(int n, int m)
 {
     if (n == m)
         return m;
-    else if (n > m) return n + SummNumbers(n - 1, m);
+    else if (n > m)
+        return n + SummNumbers(n - 1, m);
     else
         return n + SummNumbers(n + 1, m);
 }
